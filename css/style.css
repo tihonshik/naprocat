@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #6d2dff;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    background: rgb(251, 251, 251);
+    display: flex;
+    position: absolute;
+}
+
+.header_logo{
+    cursor: pointer;
+    margin-top: 72px;
+    margin-left: 20%;
+}
+
+.topnav{
+    margin-top: 72px;
+    margin-left: 7%;
+}
+
+.topnav a{
+    text-align: center;
+    color: #6d2dff;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.phone{
+    display: flex;
+    cursor: pointer;
+    margin-top: 72px;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.phone p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.phone img{
+    margin-right: 5px;
+}
+
+.topnav a:hover{
+    border-bottom: 3px solid #6d2dff;
+}
+
+main{
+    display: inline-flex;
+    width: 100%;
+    background: rgb(251, 251, 251);
+}
+
+main .main_welcome{
+    display: flex;
+    padding: 200px 0 100px 0;
+    margin-bottom: 150px;
+}
+
+main .main_welcome .main_left
+{
+    margin-left: 20%;
+    text-align: center;
+
+}
+
+.main_left h1{
+    margin-top: 200px;
+    font-size: 72px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.main_left p{
+    margin-top: 60px;
+    text-align: left;
+    font-size: 24px;
+    color: #9688ad;
+}
+
+
+.main_left .button p{
+    width:180px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px 0 0 0;
+    background: rgba(255, 143, 29, 0.7);
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+main .main_welcome .main_right{
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 20%;
+}
