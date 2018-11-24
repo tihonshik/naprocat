@@ -7,8 +7,29 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 </head>
 <body>
+<script type="text/javascript" language="JavaScript">
+    function changeImg(source)
+    {
+        document.pict1.src = 'img/' + source + '.png';
+    };
+    function changeImg2(source)
+    {
+        document.pict2.src = 'img/' + source + '.png';
+    };
+    function changeImg3(source)
+    {
+        document.pict3.src = 'img/' + source + '.png';
+    };
+
+</script>
 <header>
     <div class="header_logo">
         <img src="img/logo.png">
@@ -42,7 +63,57 @@
             </div>
         </div>
     </div>
+    <div class="about_us">
+        <div class="question_left">
+            <img src="img/about_left.png">
+        </div>
+        <div class="about_info">
+            <h2>Кто мы такие?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum. Sed ut pers</p>
+        </div>
+        <div class="question_right">
+            <img src="img/about_right.png">
+        </div>
+    </div>
+    <div class="information">
+        <div class="reviews"
+             onmouseout="changeImg('Comment')"
+             onmouseover="changeImg('наведение/Comment')">
+            <img src="img/Comment.png"
+                 name="pict1">
+            <p>Положительные отзывы</p>
+        </div>
+        <div class="present"
+             onmouseout="changeImg2('Present')"
+             onmouseover="changeImg2('наведение/Present')">
+            <img name="pict2" src="img/Present.png">
+            <p>Положительные отзывы</p>
+        </div>
+        <div class="photographer"
+             onmouseout="changeImg3('Photo%20camera')"
+             onmouseover="changeImg3('наведение/Photo%20camera')">
+            <img name="pict3" src="img/Photo%20camera.png">
+            <p>Положительные отзывы</p>
+        </div>
+    </div>
+
 </main>
+<footer id="contacts" class="footer">
+    <div class="contacts">
+        <a href="https://www.facebook.com/filipp.tihonovich"><img src="img/social/Facebook.png"></a>
+        <a href="https://github.com/tihonshik"><img src="img/social/Github.png"></a>
+        <a href="https://www.instagram.com/tihon_f/"><img src="img/social/Instagram.png"></a>
+        <a href="https://twitter.com/FTihon"><img src="img/social/Twitter.png"></a>
+        <a href="https://www.youtube.com/"><img src="img/social/YouTube.png"></a>
+    </div>
+    <div class="copyright">@2018. Все права защищены.</div>
+</footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 </body>
 </html>

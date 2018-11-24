@@ -59,15 +59,15 @@ header{
 }
 
 main{
-    display: inline-flex;
+    display: table;
     width: 100%;
-    background: rgb(251, 251, 251);
 }
 
 main .main_welcome{
     display: flex;
     padding: 200px 0 100px 0;
     margin-bottom: 150px;
+    background: rgb(251, 251, 251);
 }
 
 main .main_welcome .main_left
@@ -102,10 +102,120 @@ main .main_welcome .main_left
     font-size: 24px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 main .main_welcome .main_right{
     text-align: center;
     margin-left: 90px;
     margin-right: 20%;
+}
+
+main .about_us{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.about_us .question_left{
+    margin-left: 20%;
+}
+
+.about_us .question_right{
+    margin-right: 20%;
+}
+
+.about_us .about_info{
+    width: 100%;
+    text-align: center;
+}
+
+.about_us .about_info h2{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about_us .about_info p{
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #9688ad;
+}
+
+.information{
+    background: rgb(251, 251, 251);
+    display: flex;
+    height: 250px;
+}
+
+.information .reviews{
+    margin-left: 20%;
+    text-align: center;
+    padding: 75px 70px 75px 70px;
+}
+
+.information .present{
+    margin-left: 7%;
+    width: 20%;
+    text-align: center;
+    padding: 75px 70px 75px 70px;
+}
+
+.information .photographer{
+    margin-left: 7%;
+    width: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding: 75px 70px 75px 70px;
+}
+
+.information .reviews:hover{
+    margin-left: 20%;
+    text-align: center;
+    padding: 75px 70px 75px 70px;
+    background: rgb(109, 45, 255);
+    color: white;
+}
+
+.information .present:hover{
+    margin-left: 7%;
+    width: 20%;
+    text-align: center;
+    padding: 75px 70px 75px 70px;
+    background: rgb(109, 45, 255);
+    color: white;
+}
+
+.information .photographer:hover{
+    margin-left: 7%;
+    width: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding: 75px 70px 75px 70px;
+    background: rgb(109, 45, 255);
+    color: white;
+}
+
+.footer {
+    padding-bottom: 26px;
+    padding-top: 16px;
+    background: #6d2dff;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+
+    bottom: 10px;
+
+    width: 100%;
+    font-size: 18px;
+}
+
+.contacts {
+    width: 100%;
+    text-align: center;
+}
+
+.contacts img {
+    height: 60px;
 }
