@@ -42,7 +42,7 @@ header{
     cursor: pointer;
     margin-top: 72px;
     margin-right: 20%;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 
 .phone p{
@@ -61,6 +61,7 @@ header{
 main{
     display: table;
     width: 100%;
+    text-align: center;
 }
 
 main .main_welcome{
@@ -74,10 +75,11 @@ main .main_welcome .main_left
 {
     margin-left: 20%;
     text-align: center;
-
+    margin-top: -100px;
 }
 
 .main_left h1{
+    font-family: 'Montserrat', 700;
     margin-top: 200px;
     font-size: 72px;
     text-align: left;
@@ -98,6 +100,19 @@ main .main_welcome .main_left
     border-radius: 50px;
     padding: 20px 0 0 0;
     background: rgba(255, 143, 29, 0.7);
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.main_left .button p:hover{
+    width:180px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px 0 0 0;
+    background: rgba(109, 45, 255, 0.7);
     text-align:center;
     font-size: 24px;
     font-weight: bold;
@@ -145,39 +160,41 @@ main .about_us{
     background: rgb(251, 251, 251);
     display: flex;
     height: 250px;
+
 }
 
+.information_empty{
+    width: 31%;
+}
 .information .reviews{
-    margin-left: 20%;
     text-align: center;
+    width: 20%;
     padding: 75px 70px 75px 70px;
 }
 
 .information .present{
-    margin-left: 7%;
     width: 20%;
     text-align: center;
     padding: 75px 70px 75px 70px;
 }
 
 .information .photographer{
-    margin-left: 7%;
+
     width: 20%;
-    margin-right: 20%;
+
     text-align: center;
     padding: 75px 70px 75px 70px;
 }
 
 .information .reviews:hover{
-    margin-left: 20%;
     text-align: center;
+    width: 20%;
     padding: 75px 70px 75px 70px;
     background: rgb(109, 45, 255);
     color: white;
 }
 
 .information .present:hover{
-    margin-left: 7%;
     width: 20%;
     text-align: center;
     padding: 75px 70px 75px 70px;
@@ -186,16 +203,154 @@ main .about_us{
 }
 
 .information .photographer:hover{
-    margin-left: 7%;
     width: 20%;
-    margin-right: 20%;
     text-align: center;
     padding: 75px 70px 75px 70px;
     background: rgb(109, 45, 255);
     color: white;
 }
 
+.information p{
+    margin-top: 20px;
+}
+
+.our_cat{
+    display: flex;
+}
+
+.cat{
+    width: 20%;
+    height: 560px;
+    padding: 55px;
+    text-align: center;
+    display: table;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: none;
+}
+.cat_empty{
+    width: 20%;
+    height: 560px;
+    padding: 55px;
+    text-align: center;
+    display: table;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: none;
+}
+
+.cat:hover{
+    width: 20%;
+    height: 560px;
+    padding: 55px;
+    text-align: center;
+    display: table;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cat_about{
+    margin-top: 30px;
+    opacity: 0;
+    transition: all ease 0.8s;
+}
+
+.cat:hover .cat_about{
+    opacity: 1;
+}
+
+.cat .cat_about h3{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.cat .cat_about p{
+    color: #9688ad;
+}
+
+.cat .cat_about .button p{
+    margin-left: 18%;
+    width:180px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px 0 0 0;
+    background: rgba(255, 143, 29, 0.7);
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.cat .cat_about .button p:hover{
+    margin-left: 18%;
+    width:180px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px 0 0 0;
+    background: rgba(109, 45, 255, 0.7);
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.checkout{
+    text-align: center;
+    background: rgb(251, 251, 251);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout .form{
+    width: 600px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.checkout .form h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.checkout .form input{
+    margin-bottom: 10px;
+    width: 70%;
+    background: white;
+    padding: 10px 2%;
+    text-align: center;
+    border-radius: 7px;
+    border: 2px solid lightgray;
+    border-radius: 50px;
+    font-size: 0.9em;
+    color: black;
+}
+.form_button {
+    background: #ffa419;
+    float: left;
+    border-radius: 50px;
+    padding: 9px 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    margin-left: 36.5%;
+}
+.form_button:hover {
+    background: #6d2dff;
+}
+
 .footer {
+    width: 100%;
     padding-bottom: 26px;
     padding-top: 16px;
     background: #6d2dff;
@@ -217,5 +372,30 @@ main .about_us{
 }
 
 .contacts img {
-    height: 60px;
+    height: 24px;
 }
+
+#toTop {
+    width:50px;
+    height: 50px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:100px; /* отступ кнопки от нижнего края страницы*/
+    left:30px;
+    cursor:pointer;
+    display:none;
+}
+
+#toTop:hover{
+    width:50px;
+    height: 50px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:100px; /* отступ кнопки от нижнего края страницы*/
+    left:30px;
+    cursor:pointer;
+    display:none;
+}
+
